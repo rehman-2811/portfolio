@@ -1,0 +1,78 @@
+
+
+
+.sk_card {
+  position: relative;           /* pseudo-element ke liye zaruri */
+  overflow: hidden;             /* background overflow nahi hoga */
+  border-radius: 10px;          /* rounded corners */
+  transition: color 0.3s ease;
+  transition: transform 0.4s ease;  /* text color smooth change */
+  z-index: 1;
+  cursor: pointer;
+  background-color: #444;       /* default card color */
+  color: white;
+}
+
+/* Pseudo-element for zooming background */
+.sk_card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(145deg, #fe8710, #8e590a, #8e590a, #f5a503);
+  transform: translate(-50%, -50%) scale(0);  /* initially hidden */
+  transition: transform 0.5s ease;  
+        /* smooth zoom */
+  z-index: -1;                                /* behind text */
+  border-radius: 10px;                        /* same as card */
+}
+
+/* Hover: background zoom in */
+.sk_card:hover::before {
+  transform: translate(-50%, -50%) scale(1);  /* zoom in */
+}
+
+
+
+/* progress bar glow */
+
+/* GLOW EFFECT */
+.progress {
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.progress-bar {
+  position: relative;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4),
+              0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* ANIMATED GLOW LINE */
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: glowMove 2s infinite;
+}
+
+/* KEYFRAMES */
+@keyframes glowMove {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
