@@ -1,0 +1,29 @@
+.bg-container {
+    background: #010101;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* sab ke peeche */
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, #f1b308 , #6f4402, transparent);
+  border-radius: 50%;
+  opacity: 1
+  /* filter: blur(20px); */
+}
+
+/* random positions */
+.bubble:nth-child(1) { top: 10%; left: 20%; }
+.bubble:nth-child(2) { top: 40%; left: 70%; }
+.bubble:nth-child(3) { top: 80%; left: 30%; }
+.bubble:nth-child(4) { top: 60%; left: 10%; }
+.bubble:nth-child(5) { top: 20%; left: 80%; }
+/* aur bhi positions add kar sakte ho */

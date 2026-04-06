@@ -1,14 +1,23 @@
 
+section {
+  position: relative;
+  z-index: 1;
+  margin: 40px auto;
+  width: 90%;
+  border-radius: 20px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05); /* glass */
+  backdrop-filter: blur(10px);
+}
 
 
 .sk_card {
   position: relative;           /* pseudo-element ke liye zaruri */
   overflow: hidden;             /* background overflow nahi hoga */
   border-radius: 10px;          /* rounded corners */
-  transition: color 0.3s ease;
-  transition: transform 0.4s ease;  /* text color smooth change */
+  /* text color smooth change */
   z-index: 1;
-  cursor: pointer;
+  
   background-color: #444;       /* default card color */
   color: white;
 }
@@ -21,6 +30,7 @@
   left: 50%;
   width: 120%;
   height: 120%;
+  border: solid 5px #fe8710;
   background: linear-gradient(145deg, #fe8710, #8e590a, #8e590a, #f5a503);
   transform: translate(-50%, -50%) scale(0);  /* initially hidden */
   transition: transform 0.5s ease;  
@@ -75,4 +85,56 @@
   100% {
     left: 100%;
   }
+}
+
+
+
+
+
+
+
+
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #ffc107;
+  /* yellow/gold for premium feel */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffc107;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out, width 0.2s ease, height 0.2s ease;
+}
+
+/* optional hover expand on interactive elements */
+button:hover~.cursor-ring,
+a:hover~.cursor-ring {
+  width: 60px;
+  height: 60px;
+}
+
+.hero-blck{
+  background: transparent;
+}
+
+.hero-blck:hover{
+  background: linear-gradient( 135deg,  #a76702, #f3c008);
+  transform: scale(1.08) !important;
 }

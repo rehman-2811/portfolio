@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import'../sections/section.css'
+import '../sections/section.css'
 
 // FRONTEND SKILLS
 const frontendSkills = [
@@ -7,6 +7,7 @@ const frontendSkills = [
     { name: "JavaScript", level: 85 },
     { name: "HTML/CSS", level: 95 },
     { name: "Bootstrap", level: 80 },
+    { name: "gsap", level: 40 },
 ];
 
 // BACKEND SKILLS
@@ -22,13 +23,13 @@ const Skills = () => {
         <section
             className="py-5"
             style={{
-                backgroundColor: "#020617",
+                
                 position: "relative",
                 overflow: "hidden",
             }}
         >
             <div className="container">
-                <h2 className="text-center text-white fw-bold mb-5">
+                <h2 className="text-center text-warning fw-bold mb-5">
                     Skills & Expertise
                 </h2>
 

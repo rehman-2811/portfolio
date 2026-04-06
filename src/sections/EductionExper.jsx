@@ -37,7 +37,7 @@ const EducationExperience = () => {
     <section
       className="py-5"
       style={{
-        backgroundColor: "#0f172a",
+       
         position: "relative",
         overflow: "hidden",
       }}
@@ -83,7 +83,7 @@ const EducationExperience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <h2 className="fw-bold mb-4 text-white">Education</h2>
+              <h2 className="fw-bold mb-4 text-warning">Education</h2>
 
               {educationData.map((edu, index) => (
                 <motion.div
@@ -123,7 +123,7 @@ const EducationExperience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <h2 className="fw-bold mb-4 text-white">Experience</h2>
+              <h2 className="fw-bold mb-4 text-warning">Experience</h2>
 
               {experienceData.map((exp, index) => (
                 <motion.div

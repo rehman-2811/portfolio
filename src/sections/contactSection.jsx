@@ -23,9 +23,7 @@ const ContactSection = () => {
   return (
     <section
       className="py-5"
-      style={{
-        backgroundColor: "#0f172a",
-      }}
+     
     >
       <div className="container">
         <div className="row align-items-center">
