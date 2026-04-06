@@ -135,6 +135,7 @@ a:hover~.cursor-ring {
 }
 
 .hero-blck:hover{
-  background: linear-gradient( 135deg,  #a76702, #f3c008);
+  background: linear-gradient( 135deg,  #4a2f03, #b78616, #4a2f03);
+  transition-duration: 0.9s;
   transform: scale(1.08) !important;
 }

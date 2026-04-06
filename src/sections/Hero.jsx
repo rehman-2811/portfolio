@@ -107,7 +107,7 @@ function Hero() {
                     <div className='col-md-6 text-center text-md-start'>
                         <div>
                             <h1 className='display-4 fw-bold hero-title'>
-                                Hi I'm  <span className='text-warning'>Abdul</span> <span className='text-warning'>Rehman</span>
+                                Hi I'm  <span className='text-warning'>Abdul</span> <span className='text-warning-emphasis'>Rehman</span>
                             </h1>
                             <h2 className='mt-3'>
                                 <ReactTyped
@@ -121,7 +121,7 @@ function Hero() {
                                     loop
                                 />
                             </h2>
-                            <div className='p-1 hero-subtitle '>
+                            <div className='p-1 hero-subtitle'>
                                 <i className='bi bi-geo-alt '><span className='fw-bold text-warning ms-1 '>Lahore, Pakistan</span></i>
                             </div>
                             <div className='mt-3 hero-btn'>
