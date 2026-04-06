@@ -175,7 +175,7 @@ const About = () => {
                                 </div>
                                 <div className='col-6 col-md-4 mb-3'>
                                     <div className='card text-center shadow-sm p-3 sk_card'>
-                                        MongoDb
+                                        Mongo
                                     </div>
                                 </div>
                             </div>

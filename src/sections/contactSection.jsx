@@ -78,7 +78,7 @@ const ContactSection = () => {
                 whileHover={{ scale: 1.05, x: 10 }}
               >
                 <FaEnvelope size={25} />
-                <span>rehman.officials2821@gmail.com</span>
+                <span>Gmail</span>
               </motion.a>
             </motion.div>
 

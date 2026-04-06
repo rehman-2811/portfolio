@@ -139,3 +139,15 @@ a:hover~.cursor-ring {
   transition-duration: 0.9s;
   transform: scale(1.08) !important;
 }
+
+
+@media (max-width: 576px) {
+  .hero-blck-container {
+    flex-direction: row; /* already default */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-blck {
+    margin-bottom: 10px; /* spacing between rows */
+  }
+}

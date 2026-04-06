@@ -132,16 +132,16 @@ function Hero() {
                                 </a>
                             </div>
 
-                            <div className='d-flex py-2 mt-4 gap-3 '>
-                                <div className=' d-flex px-5 py-2 rounded flex-column align-items-center bg-warning hero-blck'>
+                            <div className='d-flex flex-wrap  py-2 mt-4 gap-3  hero-blck-container'>
+                                <div className=' d-flex px-4 py-2 rounded flex-column align-items-center bg-warning hero-blck'>
                                     <span>10+</span>
                                     <span>Projects</span>
                                 </div>
-                                <div className=' d-flex px-4 py-2 rounded flex-column align-items-center bg-warning hero-blck'>
+                                <div className=' d-flex px-2 py-2 rounded flex-column align-items-center bg-warning hero-blck'>
                                     <span>1+ year</span>
                                     <span>experience</span>
                                 </div>
-                                <div className=' d-flex px-5 py-2 rounded flex-column align-items-center bg-warning hero-blck'>
+                                <div className=' d-flex px-4 py-2 rounded flex-column align-items-center bg-warning hero-blck'>
                                     <span>10+</span>
                                     <span>clients</span>
                                 </div>

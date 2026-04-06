@@ -5,7 +5,7 @@ function Nabvar() {
     return (
         <nav className='navbar navbar-expand-lg bg-dark navbar-dark sticky-top shadow'>
             <div className="container">
-                <Link className='navbar-brand fw-bold' to="/_">
+                <Link className='navbar-brand fw-bold' to="/">
                     Abdul Rehman
                 </Link>
 
